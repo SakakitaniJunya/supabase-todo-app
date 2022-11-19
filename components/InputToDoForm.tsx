@@ -8,7 +8,7 @@ export const InputTodoForm : React.FC = () => {
 
         const pushTodo = async (e:any) => {
             e.preventDefault();
-            await supabase.from('todo').insert({title});
+            await supabase.from('todos').insert({title});
             fetchTodos()
             setTitle('');
         }
