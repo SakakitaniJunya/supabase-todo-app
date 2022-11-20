@@ -3,11 +3,11 @@ import { useAddTodo } from '../Hooks/useAddTodo'
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 
 export const TodoList : React.FC = () =>  {
     const {todos} = useAddTodo()
+
     return (
         <>
         <div>TodoList</div>
